@@ -1,0 +1,38 @@
+server:
+  port: 9999
+jwt:
+  signingkey: mxzenf
+logging:
+  level:
+    com.yx.potato: DEBUG
+    org.springframework: DEBUG
+    org.apache.ibatis: DEBUG
+datasource:
+  sysdb:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.20.130:3306/potato?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 810314yx
+spring:
+  redis: 
+    host: 192.168.20.130
+    database: 0
+  #datasource:
+  #  driverClassName: com.mysql.jdbc.Driver
+  #  url: jdbc:mysql://192.168.20.130:3306/potato?useUnicode=true&characterEncoding=utf-8
+  #  username: root
+  #  password: 810314yx
+  #  type: com.alibaba.druid.pool.DruidDataSource
+  #  filters: stat
+  #  maxActive: 20
+  #  initialSize: 1
+  #  maxWait: 60000
+  #  minIdle: 1
+  #  timeBetweenEvictionRunsMillis: 60000
+  #  minEvictableIdleTimeMillis: 300000
+  #  validationQuery: select 'x'
+  #  testWhileIdle: true
+  #  testOnBorrow: false
+  #  testOnReturn: false
+  #  poolPreparedStatements: true
+  #  maxOpenPreparedStatements: 20
